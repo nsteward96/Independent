@@ -1,0 +1,11 @@
+.links-container dl.links-list dt {
+  overflow: visible;
+  white-space: initial;
+  width: 100%;
+}
+
+.nates-awesome-date-element {
+  display: inline-block;
+  position: relative;
+  width: 225px;
+}
