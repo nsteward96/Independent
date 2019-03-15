@@ -13,14 +13,14 @@ $(document).ready(function() {
 function update_depend_wording_for_jira() {
   var dependent_array = document.querySelectorAll('[title="is dependent upon"]');
   for (let i = 0; i < dependent_array.length; i++) {
-    dependent_array[i].innerText = 'Issues that cannot be started until this is complete (dependent upon):';
-    dependent_array[i].title = 'Issues that cannot be started until this is complete (dependent upon):';
+    dependent_array[i].innerText = 'Issues that cannot be started until this ticket is complete (dependent upon):';
+    dependent_array[i].title = 'Issues that cannot be started until this ticket is complete (dependent upon):';
   }
 
   var depends_array = document.querySelectorAll('[title="depends on"]');
   for (let i = 0; i < depends_array.length; i++) {
-    depends_array[i].innerText = 'Issues that must be completed before this can be worked (depends on):'
-    depends_array[i].title = 'Issues that must be completed before this can be worked (depends on):'
+    depends_array[i].innerText = 'Issues that must be completed before this ticket can be worked (depends on):'
+    depends_array[i].title = 'Issues that must be completed before this ticket can be worked (depends on):'
   }
 }
 
