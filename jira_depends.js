@@ -1,10 +1,12 @@
 $(document).ready(function() {
   update_depend_wording_for_jira();
   update_issue_time_stamps_to_show_specific_time();
+  turn_idea_icons_orange();
 
   setInterval(function() {
     update_depend_wording_for_jira();
     update_issue_time_stamps_to_show_specific_time();
+    turn_idea_icons_orange();
   }, 500);
 });
 
@@ -81,5 +83,17 @@ function update_activity_section() {
     inserted_element.innerText = time_stamp_array[i].title;
 
     container_array[i].appendChild(inserted_element);
+  }
+}
+
+// Updates the background of the icons of Idea tickets orange
+function turn_idea_icons_orange() {
+  idea_icon_substring = '&avatarId=14930';
+  images = document.querySelectorAll('img');
+
+  for (let i = 0; i < images.length; i++) {
+    if (images[i].src.indexOf(idea_icon_substring) != -1) {
+      images[i].src = chrome.extension.getURL("/images/jira_idea_question_mark_better.jpg");
+    }
   }
 }

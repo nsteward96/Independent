@@ -9,5 +9,8 @@
       "js": ["jquery-3.3.1.js", "jira_depends.js"],
       "css": ["jira_depends.css"]
     }
+  ],
+  "web_accessible_resources": [
+    "images/jira_idea_question_mark_better.jpg"
   ]
 }
