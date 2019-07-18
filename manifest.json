@@ -12,5 +12,9 @@
   ],
   "web_accessible_resources": [
     "images/jira_idea_question_mark_better.jpg"
-  ]
+  ],
+  "options_ui": {
+    "page": "pages/options.html",
+    "open_in_tab": true
+  }
 }
