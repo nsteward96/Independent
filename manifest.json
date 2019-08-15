@@ -3,6 +3,9 @@
   "version": "1.1.1",
   "description": "Changes Jira to use more clear terminology instead of 'is dependent upon' and 'depends on' when referring to issues' dependencies. Also does other cool Jira stuff now.",
   "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["*://jira.drivedominion.com/*"],
@@ -15,6 +18,11 @@
   ],
   "options_ui": {
     "page": "pages/options.html",
+<<<<<<< HEAD
     "open_in_tab": true
+=======
+    "open_in_tab": false,
+    "chrome_style": true
+>>>>>>> fd7138841db01e5696bbe62906a4d59fe1665908
   }
 }
