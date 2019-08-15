@@ -1,3 +1,8 @@
+body
+{
+  background-color: #eeeef8;
+}
+
 div.wrapper
 {
   width: 450px;
@@ -12,6 +17,32 @@ table.popup-options-table
 table.popup-options-table tbody tr td
 {
   padding: 10px;
+}
+
+div.save-section
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+div.save-button
+{
+  display: inline-block;
+  width: 60px;
+  cursor: pointer;
+}
+
+div.saved-status
+{
+  display: none;
+  float: right;
+  color: limegreen;
+  text-align: center;
+  font-size: 16px;
+  min-height: 22px;
 }
 
 /* The switch - the box around the slider */
